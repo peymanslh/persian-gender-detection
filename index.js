@@ -15,6 +15,11 @@ const cleanName = name => {
   return name;
 };
 
+/**
+ * Detect gender by first name
+ * @param  {String} name
+ * @return {String}
+ */
 const getGender = name => {
   name = cleanName(name);
   if (male[name]) {
@@ -26,6 +31,11 @@ const getGender = name => {
   }
 };
 
+/**
+ * Detect language of name, like farsi and fingilish
+ * @param  {String} name
+ * @return {String}
+ */
 const getLang = name => {
   name = cleanName(name);
   if (male[name]) {
