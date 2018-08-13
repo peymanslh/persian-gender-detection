@@ -1,0 +1,47 @@
+{
+  "name": "persian-gender-detection",
+  "version": "0.0.1",
+  "description": "Persian names gender detector",
+  "main": "index.js",
+  "repository": "git@github.com:peymanslh/persian-gender-detection.git",
+  "author": "Peyman Salehi <slh.peyman@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/peymanslh/persian-gender-detection/issues"
+  },
+  "contributors": [
+    {
+      "name": "Peyman Salehi",
+      "email": "slh.peyman@gmail.com"
+    },
+    {
+      "name": "Ali MasudianPour",
+      "email": "masud.amp@gmail.com"
+    }
+  ],
+  "keywords": [
+    "gender",
+    "persian"
+  ],
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0",
+    "prettier": "1.14.2",
+    "pretty-quick": "^1.6.0"
+  },
+  "scripts": {
+    "precommit": "pretty-quick --staged",
+    "pretty": "yarn prettier --write '{./*.js,**/*.json,./**/*.test.js}'",
+    "test": "mocha"
+  },
+  "prettier": {
+    "useTabs": false,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": true,
+    "bracketSpacing": true,
+    "filepath": "{./*.js,**/*.json,./**/*.test.js}"
+  }
+}
