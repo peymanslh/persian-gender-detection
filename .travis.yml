@@ -1,15 +1,15 @@
 language: node_js
 
 node_js:
-  - "7"
-  - "8"
-  - "9"
   - "10"
-  - "stable"
+  - "11"
+  - "12"
+  - "13"
+  - "14"
 
 script:
-  - yarn
-  - yarn test
+  - npm install
+  - npm test
 
 cache:
   directories:
