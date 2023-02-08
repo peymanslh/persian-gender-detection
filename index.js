@@ -3,7 +3,7 @@ const female = require('./gender/female.json');
 
 /**
  * Remove space and extra characters from name
- * @param  {String}
+ * @param {String} name
  * @return {String}
  */
 const cleanName = name => {
